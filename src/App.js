@@ -17,9 +17,8 @@ class App extends React.Component {
   render() {
     const { cardsList } = this.state
     return (
-      <container>
+      <container className='bg-dark'>
         <Navbar></Navbar>
-        <h1 className="title">Cards</h1>
         <Wrapper>
           {
             cardsList.map(card => {

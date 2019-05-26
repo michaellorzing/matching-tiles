@@ -4,7 +4,7 @@ import React from 'react';
 function Card(props) {
   return (
     <div
-      className="card m-2"
+      className="card"
       id="click-item">
       <div className="img-container">
         <img 
