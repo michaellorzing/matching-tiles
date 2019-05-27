@@ -8,7 +8,7 @@ import cards from './cards.json';
 import './App.css';
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
       cardsList: cards,
@@ -16,37 +16,59 @@ class App extends React.Component {
       topScore: 0,
       selected: []
     };
-    this.handleClickEvent=this.handleClickEvent.bind(this)
+    this.handleClickEvent = this.handleClickEvent.bind(this)
   };
- 
+
 
   handleClickEvent = event => {
-    console.log(event.target)
+    // console.log(event.target)
     this.shuffleCards()
     this.pushPick(event)
+    this.newTopScore()
   }
 
   shuffleCards = () => {
     this.setState({
       cardsList: shuffle(this.state.cardsList)
     })
-    
+
   }
 
   pushPick = event => {
-    console.log(event)
+    this.state.cardsList.forEach((card) => {
+      console.log(card)
+    })
     this.setState({
       selected: [...this.state.selected, event.target.id]
     })
     console.log(this.state)
+    if (this.state.selected === event.target.id) {
+      alert("You've already selected that card!")
+      this.setState({
+        count: [],
+        score: 0
+      });
+    } else {
+      this.setState(prevState => {
+        return {count: prevState.score++}
+      })
+    }
   };
+
+  newTopScore = () => {
+    if (this.state.score !== this.state.topScore){
+      this.setState({
+        topScore: this.state.score
+      })
+    }
+  }
 
 
   render() {
-    const { cardsList } = this.state
+    const { cardsList, score, topScore } = this.state
     return (
       <React.Fragment>
-        <Navbar />
+        <Navbar currentScore={score} topScore={topScore}/>
         <Container fluid style={containerStyle}>
           <Wrapper>
             {
