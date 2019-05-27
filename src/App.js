@@ -8,18 +8,38 @@ import cards from './cards.json';
 import './App.css';
 
 class App extends React.Component {
-  state = {
-    cardsList: cards,
-    score: 0,
-    topScore: 0
+  constructor(props){
+    super(props)
+    this.state = {
+      cardsList: cards,
+      score: 0,
+      topScore: 0,
+      selected: []
+    };
+    this.handleClickEvent=this.handleClickEvent.bind(this)
   };
+ 
+
+  handleClickEvent = event => {
+    console.log(event.target)
+    this.shuffleCards()
+    this.pushPick(event)
+  }
 
   shuffleCards = () => {
-    // console.log('hit')
     this.setState({
       cardsList: shuffle(this.state.cardsList)
     })
+    
   }
+
+  pushPick = event => {
+    console.log(event)
+    this.setState({
+      selected: [...this.state.selected, event.target.id]
+    })
+    console.log(this.state)
+  };
 
 
   render() {
@@ -28,7 +48,6 @@ class App extends React.Component {
       <React.Fragment>
         <Navbar />
         <Container fluid style={containerStyle}>
-         
           <Wrapper>
             {
               cardsList.map(card => {
@@ -38,7 +57,7 @@ class App extends React.Component {
                     name={card.name}
                     image={card.image}
                     id={card.id}
-                    handleClick={() => this.shuffleCards()}
+                    handleClick={this.handleClickEvent}
                   />
                 )
               })
@@ -50,7 +69,7 @@ class App extends React.Component {
   };
 };
 
-const containerStyle ={
+const containerStyle = {
   background: 'grey'
 }
 
