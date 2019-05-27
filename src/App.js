@@ -1,5 +1,6 @@
 import React from 'react';
-import shuffle from 'lodash/shuffle'
+import { Container } from 'reactstrap';
+import shuffle from 'lodash/shuffle';
 import Card from './components/card';
 import Navbar from './components/Navbar';
 import Wrapper from './components/Wrapper';
@@ -14,9 +15,9 @@ class App extends React.Component {
   };
 
   shuffleCards = () => {
-    console.log('hit')
+    // console.log('hit')
     this.setState({
-     cardsList: shuffle(this.state.cardsList)
+      cardsList: shuffle(this.state.cardsList)
     })
   }
 
@@ -24,26 +25,33 @@ class App extends React.Component {
   render() {
     const { cardsList } = this.state
     return (
-      <container className='bg-dark'>
+      <React.Fragment>
         <Navbar />
-        <Wrapper>
-          {
-            cardsList.map(card => {
-              return (
-                <Card
-                  key={card.id}
-                  name={card.name}
-                  image={card.image}
-                  id={card.id}
-                  handleClick= {() => this.shuffleCards()}
-                />
-              )
-            })
-          }
-        </Wrapper>
-      </container>
+        <Container fluid style={containerStyle}>
+         
+          <Wrapper>
+            {
+              cardsList.map(card => {
+                return (
+                  <Card
+                    key={card.id}
+                    name={card.name}
+                    image={card.image}
+                    id={card.id}
+                    handleClick={() => this.shuffleCards()}
+                  />
+                )
+              })
+            }
+          </Wrapper>
+        </Container>
+      </React.Fragment>
     );
   };
 };
+
+const containerStyle ={
+  background: 'grey'
+}
 
 export default App;
