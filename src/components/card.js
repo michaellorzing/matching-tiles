@@ -2,12 +2,12 @@ import React from 'react';
 
 
 function Card(props) {
+  const { handleClick } = props
   return (
-    <div
-      className="card"
-      id="click-item">
+    <div className="card" style={imgStyle}>
       <div className="img-container">
         <img 
+        onClick={handleClick}
         alt={props.name} 
         src={props.image} />
       </div>
@@ -15,5 +15,7 @@ function Card(props) {
   );
 }
 
-
+const imgStyle ={
+  padding: 0
+}
 export default Card;

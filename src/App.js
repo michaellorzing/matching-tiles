@@ -1,4 +1,5 @@
 import React from 'react';
+import shuffle from 'lodash/shuffle'
 import Card from './components/card';
 import Navbar from './components/Navbar';
 import Wrapper from './components/Wrapper';
@@ -12,13 +13,19 @@ class App extends React.Component {
     topScore: 0
   };
 
+  shuffleCards = () => {
+    console.log('hit')
+    this.setState({
+     cardsList: shuffle(this.state.cardsList)
+    })
+  }
 
 
   render() {
     const { cardsList } = this.state
     return (
       <container className='bg-dark'>
-        <Navbar></Navbar>
+        <Navbar />
         <Wrapper>
           {
             cardsList.map(card => {
@@ -28,6 +35,7 @@ class App extends React.Component {
                   name={card.name}
                   image={card.image}
                   id={card.id}
+                  handleClick= {() => this.shuffleCards()}
                 />
               )
             })
