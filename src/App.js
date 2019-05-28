@@ -20,11 +20,10 @@ class App extends React.Component {
   };
 
 
-  handleClickEvent = event => {
-    // console.log(event.target)
+  handleClickEvent(id) {
     this.shuffleCards()
-    this.pushPick(event)
-    this.newTopScore()
+    this.handleScore()
+    this.pushPick(id)
   }
 
   shuffleCards = () => {
@@ -34,31 +33,30 @@ class App extends React.Component {
 
   }
 
-  pushPick = event => {
-    this.state.cardsList.forEach((card) => {
-      console.log(card)
-    })
-    this.setState({
-      selected: [...this.state.selected, event.target.id]
-    })
-    console.log(this.state)
-    if (this.state.selected === event.target.id) {
+  pushPick = id => {
+    if (this.state.selected.indexOf(id) === -1) {
+      this.setState({
+        selected: this.state.selected.concat(id)
+      })
+      this.handleScore()
+    } else {
       alert("You've already selected that card!")
       this.setState({
-        count: [],
-        score: 0
-      });
-    } else {
-      this.setState(prevState => {
-        return {count: prevState.score++}
+        score: 0,
+        topScore: 0,
+        selected: []
       })
     }
   };
 
-  newTopScore = () => {
-    if (this.state.score !== this.state.topScore){
+  handleScore = () => {
+    const currentScore = this.state.score + 1
+    this.setState({
+      score: currentScore
+    })
+    if (currentScore >= this.state.topScore){
       this.setState({
-        topScore: this.state.score
+        topScore: currentScore
       })
     }
   }
@@ -66,6 +64,8 @@ class App extends React.Component {
 
   render() {
     const { cardsList, score, topScore } = this.state
+    // console.log(this.state.cardsList.id)
+    console.log(this.state)
     return (
       <React.Fragment>
         <Navbar currentScore={score} topScore={topScore}/>
@@ -73,6 +73,7 @@ class App extends React.Component {
           <Wrapper>
             {
               cardsList.map(card => {
+                // console.log(card)
                 return (
                   <Card
                     key={card.id}

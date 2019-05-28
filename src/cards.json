@@ -2,147 +2,176 @@
   {
     "id": 1,
     "name": "Fog",
-    "image": "http://mythicspoiler.com/lea/cards/fog.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/fog.jpg",
+    "clicked": false
   },
   {
     "id": 2,
     "name": "Mox Sapphire",
-    "image": "http://mythicspoiler.com/lea/cards/moxsapphire.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/moxsapphire.jpg",
+    "clicked": false
   },
   {
     "id": 3,
     "name": "Clone",
-    "image": "http://mythicspoiler.com/lea/cards/clone.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/clone.jpg",
+    "clicked": false
   },
   {
     "id": 4,
     "name": "Mox Emerald",
-    "image": "http://mythicspoiler.com/lea/cards/moxemerald.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/moxemerald.jpg",
+    "clicked": false
 
   },
   {
     "id": 5,
     "name": "Mox Jet",
-    "image": "http://mythicspoiler.com/lea/cards/moxjet.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/moxjet.jpg",
+    "clicked": false
   },
   {
     "id": 6,
     "name": "Shivan Dragon",
-    "image": "http://mythicspoiler.com/lea/cards/shivandragon.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/shivandragon.jpg",
+    "clicked": false
   },
   {
     "id": 7,
     "name": "Time Twister",
-    "image": "http://mythicspoiler.com/lea/cards/timetwister.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/timetwister.jpg",
+    "clicked": false
   },
   {
     "id": 8,
     "name": "Unholy Strength",
-    "image": "http://mythicspoiler.com/lea/cards/unholystrength.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/unholystrength.jpg",
+    "clicked": false
   },
   {
     "id": 9,
     "name": "Demonic Tutor",
-    "image": "http://mythicspoiler.com/lea/cards/demonictutor.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/demonictutor.jpg",
+    "clicked": false
   },
   {
     "id": 10,
     "name": "Time Walk",
-    "image": "http://mythicspoiler.com/lea/cards/timewalk.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/timewalk.jpg",
+    "clicked": false
   },
   {
     "id": 11,
     "name": "Prodigal Sorcerer",
-    "image": "http://mythicspoiler.com/lea/cards/prodigalsorcerer.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/prodigalsorcerer.jpg",
+    "clicked": false
   },
   {
     "id": 12,
     "name": "Swords to Plowshares",
-    "image": "http://mythicspoiler.com/lea/cards/swordstoplowshares.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/swordstoplowshares.jpg",
+    "clicked": false
   },
   {
     "id": 13,
     "name": "Berserk",
-    "image": "http://mythicspoiler.com/lea/cards/berserk.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/berserk.jpg",
+    "clicked": false
   },
   {
     "id": 14,
     "name": "Birds of Paradise",
-    "image": "http://mythicspoiler.com/lea/cards/birdsofparadise.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/birdsofparadise.jpg",
+    "clicked": false
   },
   {
     "id": 15,
     "name": "Mox Pearl",
-    "image": "http://mythicspoiler.com/lea/cards/moxpearl.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/moxpearl.jpg",
+    "clicked": false
   },
   {
     "id": 16,
     "name": "Serra Angel",
-    "image": "http://mythicspoiler.com/lea/cards/serraangel.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/serraangel.jpg",
+    "clicked": false
   },
   {
     "id": 18,
     "name": "Mox Ruby",
-    "image": "http://mythicspoiler.com/lea/cards/moxruby.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/moxruby.jpg",
+    "clicked": false
   },
   {
     "id": 19,
     "name": "Ancestral Recall",
-    "image": "http://mythicspoiler.com/lea/cards/ancestralrecall.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/ancestralrecall.jpg",
+    "clicked": false
   },
   {
     "id": 20,
     "name": "Lightning Bolt",
-    "image": "http://mythicspoiler.com/lea/cards/lightningbolt.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/lightningbolt.jpg",
+    "clicked": false
   },
   {
     "id": 21,
     "name": "Sol Ring",
-    "image": "http://mythicspoiler.com/lea/cards/solring.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/solring.jpg",
+    "clicked": false
   },
   {
     "id": 22,
     "name": "Sengir Vampire",
-    "image": "http://mythicspoiler.com/lea/cards/sengirvampire.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/sengirvampire.jpg",
+    "clicked": false
   },
   {
     "id": 23,
     "name": "Black Lotus",
-    "image": "http://mythicspoiler.com/lea/cards/blacklotus.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/blacklotus.jpg",
+    "clicked": false
   },
   {
     "id": 24,
     "name": "Chaos Orb",
-    "image": "http://mythicspoiler.com/lea/cards/chaosorb.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/chaosorb.jpg",
+    "clicked": false
   },
   {
     "id": 25,
     "name": "Mana Vault",
-    "image": "http://mythicspoiler.com/lea/cards/manavault.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/manavault.jpg",
+    "clicked": false
   },
   {
     "id": 26,
     "name": "Dingus Egg",
-    "image": "http://mythicspoiler.com/lea/cards/dingusegg.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/dingusegg.jpg",
+    "clicked": false
   },
   {
     "id": 27,
     "name": "Armageddon",
-    "image": "http://mythicspoiler.com/lea/cards/armageddon.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/armageddon.jpg",
+    "clicked": false
   },
   {
     "id": 28,
     "name": "Disintegrate",
-    "image": "http://mythicspoiler.com/lea/cards/disintegrate.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/disintegrate.jpg",
+    "clicked": false
   },
   {
     "id": 29,
     "name": "Fear",
-    "image": "http://mythicspoiler.com/lea/cards/fear.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/fear.jpg",
+    "clicked": false
   },
   {
     "id": 30,
     "name": "Llanowar Elves",
-    "image": "http://mythicspoiler.com/lea/cards/llanowarelves.jpg"
+    "image": "http://mythicspoiler.com/lea/cards/llanowarelves.jpg",
+    "clicked": false
   }
 ]

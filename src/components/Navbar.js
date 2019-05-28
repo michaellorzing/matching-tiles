@@ -3,20 +3,24 @@ import React from 'react';
 function Navbar(props) {
   const { currentScore, topScore } = props;
   return (
-    <nav className="navbar navbar-dark bg-secondary sticky-top w-100 text-justify-left text-light">
-        <ul className="navbar-nav">
-          <li className="nav-item text-align-left">
-            <p>React: The Gathering</p>
-          </li>
-          <li className="text-justify-right">
-            <p>Current Score: {currentScore}</p>
-            <p>Top Score: {topScore}</p>
-          </li>  
-        </ul>
-    </nav>
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark sticky-top w-100 text-justify-left" style={navStyle}>
+    <span className="navbar-brand" style={navStyle}>React: The Gathering</span>
+      <ul className="navbar-nav text-justify-right">
+        <li className="nav-item">
+          <span>Current Score: {currentScore} </span>
+        </li>
+        <li className="nav-item">
+          <span> High Score: {topScore} </span>
+        </li>
+      </ul>
+     </nav> 
   )
 }
 
+
+const navStyle = {
+  color: 'white'
+}
 
 
 export default Navbar;
