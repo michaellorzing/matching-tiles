@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/matching-tiles/static/css/main.ba49ec77.chunk.css",
+    "main.js": "/matching-tiles/static/js/main.68d1d3a3.chunk.js",
+    "main.js.map": "/matching-tiles/static/js/main.68d1d3a3.chunk.js.map",
+    "runtime~main.js": "/matching-tiles/static/js/runtime~main.a954ece8.js",
+    "runtime~main.js.map": "/matching-tiles/static/js/runtime~main.a954ece8.js.map",
+    "static/js/2.3d0c7bc5.chunk.js": "/matching-tiles/static/js/2.3d0c7bc5.chunk.js",
+    "static/js/2.3d0c7bc5.chunk.js.map": "/matching-tiles/static/js/2.3d0c7bc5.chunk.js.map",
+    "index.html": "/matching-tiles/index.html",
+    "precache-manifest.1d7f59974d8596a816137adae0c748ea.js": "/matching-tiles/precache-manifest.1d7f59974d8596a816137adae0c748ea.js",
+    "service-worker.js": "/matching-tiles/service-worker.js",
+    "static/css/main.ba49ec77.chunk.css.map": "/matching-tiles/static/css/main.ba49ec77.chunk.css.map"
+  }
+}
