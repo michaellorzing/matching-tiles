@@ -43,7 +43,6 @@ class App extends React.Component {
       alert("You've already selected that card!")
       this.setState({
         score: 0,
-        topScore: 0,
         selected: []
       })
     }
